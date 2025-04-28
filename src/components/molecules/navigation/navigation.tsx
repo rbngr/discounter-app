@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { useState } from "react";
+import "./navigation.css";
 
 interface NavigationProps {
   collapsed: boolean;
@@ -12,12 +13,7 @@ export default function Navigation({ collapsed }: NavigationProps) {
   const [isCollapsed, setIsCollapsed] = useState(collapsed);
 
   return (
-    <nav
-      className={
-        "h-full p-4 bg-slate-100 transition-all " +
-        (isCollapsed ? "w-16" : "w-64")
-      }
-    >
+    <nav className={isCollapsed ? "collapsed" : ""}>
       <div className={"flex justify-end items-center"}>
         <ArrowLeft
           size={24}

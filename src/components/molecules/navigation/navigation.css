@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+nav {
+    @apply h-full w-64 p-4 bg-slate-100 transition-all;
+
+    &.collapsed {
+        @apply w-16;
+    }
+}
