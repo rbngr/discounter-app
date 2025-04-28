@@ -7,6 +7,20 @@ nav {
         @apply flex w-full justify-end items-center;
     }
 
+    ul {
+        @apply mt-8 flex flex-col justify-center;
+
+        li {
+            .lucide {
+                @apply text-neutral-600;
+            }
+
+            a {
+                @apply flex gap-4 w-full overflow-hidden w-full transition-all;
+            }
+        }
+    }
+
     .lucide-arrow-left {
         @apply text-neutral-500 cursor-pointer transition-all rotate-0;
     }
@@ -20,6 +34,18 @@ nav {
 
         div {
             @apply justify-center;
+        }
+
+        ul {
+            li {
+                .lucide {
+                    @apply text-neutral-600;
+                }
+
+                a span {
+                    @apply w-0;
+                }
+            }
         }
     }
 }
