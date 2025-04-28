@@ -3,7 +3,23 @@
 nav {
     @apply h-full w-64 p-4 bg-slate-100 transition-all;
 
+    div {
+        @apply flex w-full justify-end items-center;
+    }
+
+    .lucide-arrow-left {
+        @apply text-neutral-500 cursor-pointer transition-all rotate-0;
+    }
+
     &.collapsed {
         @apply w-16;
+
+        .lucide-arrow-left {
+            @apply rotate-180;
+        }
+
+        div {
+            @apply justify-center;
+        }
     }
 }

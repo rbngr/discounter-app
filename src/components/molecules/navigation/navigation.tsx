@@ -14,13 +14,10 @@ export default function Navigation({ collapsed }: NavigationProps) {
 
   return (
     <nav className={isCollapsed ? "collapsed" : ""}>
-      <div className={"flex justify-end items-center"}>
+      <div>
         <ArrowLeft
           size={24}
-          className={
-            "text-neutral-500 cursor-pointer " +
-            (isCollapsed ? "rotate-180" : "rotate-0")
-          }
+          className={isCollapsed ? "collapsed" : ""}
           onClick={() => setIsCollapsed(!isCollapsed)}
         />
       </div>
