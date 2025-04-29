@@ -122,5 +122,5 @@
 }
 
 hr {
-    @apply w-full h-[1px] bg-black my-4;
+    @apply w-full h-[1px] bg-neutral-200 my-4;
 }
